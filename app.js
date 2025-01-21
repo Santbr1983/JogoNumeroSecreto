@@ -1,8 +1,3 @@
-//let titulo = document.querySelector ('h1');
-//titulo.innerHTML = 'Jogo do Número Secreto';
-
-//let paragrafo = document.querySelector ('p');
-//paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
 let numerosSorteados = [];
 
 function habilitarChute() {
@@ -13,9 +8,9 @@ habilitarChute();
 
 
 function gerarNumero () {
-    let numeroEscolhido = parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
     let tamanhoLista = numerosSorteados.length;
-    if (tamanhoLista == 10) {
+    if (tamanhoLista == 100) {
         numerosSorteados = []
     }
 
@@ -46,7 +41,7 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial () {
     exibirTexto('h1', 'Jogo do Número Secreto');
-    exibirTexto('p', 'Escolha um número entre 1 e 10');
+    exibirTexto('p', 'Escolha um número entre 1 e 100');
 }
 
 exibirMensagemInicial()
