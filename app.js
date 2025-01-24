@@ -7,9 +7,9 @@ function habilitarChute() {
 habilitarChute();
 
 function gerarNumero () {
-    let numeroEscolhido = parseInt(Math.random() * 100 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 50 + 1);
     let tamanhoLista = numerosSorteados.length;
-    if (tamanhoLista == 100) {
+    if (tamanhoLista == 50) {
         numerosSorteados = []
     }
     if (numerosSorteados.includes(numeroEscolhido)) {
@@ -39,7 +39,7 @@ function exibirTexto(tag, texto) {
 
 function exibirMensagemInicial () {
     exibirTexto('h1', 'Número Secreto Game');
-    exibirTexto('p', 'Escolha um número entre 1 e 100');
+    exibirTexto('p', 'Escolha um número entre 1 e 50');
 }
 
 exibirMensagemInicial()
